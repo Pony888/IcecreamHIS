@@ -6,30 +6,22 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.sujiaxiang.witmed</groupId>
-  <artifactId>witmed-parent</artifactId>
+  <artifactId>witmed-register</artifactId>
   <version>1.0.0</version>
-  <!-- 设置项目打包方式：pom -->
+  <!-- 设置项目打包方式：jar -->
 
-  <!-- 配置项目父级依赖：Spring Boot Starter Parent [BEGIN] -->
-  <!-- 配置项目父级依赖：Spring Boot Starter Parent [END] -->
+  <!-- 配置项目父级依赖：Witmed Parent [BEGIN] -->
+  <!-- 配置项目父级依赖：Witmed Parent [END] -->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <spring-cloud-dependencies.version>2021.0.3</spring-cloud-dependencies.version>
-    <druid-spring-boot-starter.version>1.2.11</druid-spring-boot-starter.version>
-    <mybatis-spring-boot-starter.version>2.2.2</mybatis-spring-boot-starter.version>
-    <mybatis-plus-boot-starter.version>3.5.2</mybatis-plus-boot-starter.version>
-    <pagehelper-spring-boot-starter.version>1.4.3</pagehelper-spring-boot-starter.version>
-    <lombok.version>1.18.24</lombok.version>
-    <mapstruct.version>1.5.2.Final</mapstruct.version>
-    <hutool-all.version>5.8.4</hutool-all.version>
   </properties>
 
   <dependencies>
-    <!-- 配置依赖：Spring Boot Starter Web [BEGIN] -->
-    <!-- 配置依赖：Spring Boot Starter Web [END] -->
+    <!-- 配置依赖：Spring Cloud Starter Netflix Eureka Server [BEGIN] -->
+    <!-- 配置依赖：Spring Cloud Starter Netflix Eureka Server [END] -->
 
     <dependency>
       <groupId>junit</groupId>
@@ -39,18 +31,9 @@
     </dependency>
   </dependencies>
 
-  <dependencyManagement>
-    <dependencies>
-      <!-- 配置依赖：Spring Cloud Dependencies [BEGIN] -->
-      <!-- 配置依赖：Spring Cloud Dependencies [END] -->
-    </dependencies>
-  </dependencyManagement>
-
   <build>
     <pluginManagement>
       <plugins>
-        <!-- 配置插件：Spring Boot Maven Plugin [BEGIN] -->
-        <!-- 配置插件：Spring Boot Maven Plugin [END] -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
